@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  EEG-TransNet  —  SEED-IV Emotion Classification  (v2 — Improved)
+# ─────────────────────────────────────────────────────────────────────────────
+#
+#  Key changes vs previous implementation:
+#   • embed_dim  32 → 64    (better spatial capacity for 62 channels)
+#   • pool_size  100 → 50   (matches original paper: 250ms @ 200Hz)
+#   • attn_drop  0.8 → 0.5  (original paper value; 0.8 causes underfitting)
+#   • fc_drop    0.8 → 0.5  (same)
+#   • epochs     100 → 2000 (original paper; network converges ~50 but needs
+#                             the full run to find global best)
+#   • lr         0.0005 → 0.0002 (original paper; cosine schedule over 2000 ep)
+#   • batch_size 112 → 64   (more gradient steps per epoch with small dataset)
+#   • No early stopping      (paper never uses it; patience caused premature stop)
+#   • Weighted CE loss       (combats Fear class over-prediction)
+#
+#  T_embed  =  (num_samples - pool_size) // pool_stride + 1
+#           =  (800 - 50) // 15 + 1  =  51
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Model ──────────────────────────────────────────────────────────────────
+network: TransNet
+network_args:
+  num_classes:  4
+  num_samples:  800           # 4 s × 200 Hz
+  num_channels: 62            # full SEED-IV cap
+  embed_dim:    64            # INCREASED from 32 — richer spatial learning
+  pool_size:    50            # 250 ms @ 200 Hz (original paper value)
+  pool_stride:  15            # ~75 ms step
+  num_heads:    8
+  fc_ratio:     4
+  depth:        4
+  attn_drop:    0.5           # RESTORED to original paper value
+  fc_drop:      0.5           # RESTORED to original paper value
+
+# ── Data ───────────────────────────────────────────────────────────────────
+data_path:  dataset/seediv    # folder of preprocessed .npy files
+out_folder: output/SEED-IV
+
+# ── Training ───────────────────────────────────────────────────────────────
+preferred_device: gpu
+nGPU:         0
+random_seed:  42
+
+batch_size:   64              # REDUCED from 112 — more gradient steps/epoch
+epochs:       2000            # RESTORED to original paper value
+lr:           0.0002          # RESTORED to original paper value
+
+# No early stopping — use full 2000 epochs and take best checkpoint
+# (paper shows convergence ~50 ep but best checkpoint can come much later)
+
+# ── Data Augmentation ──────────────────────────────────────────────────────
+num_classes:  4
+num_segs:     8               # temporal segment mixing (same as original)
+
+# ── Loss ───────────────────────────────────────────────────────────────────
+use_weighted_loss: true       # inverse-frequency class weights for CE loss
+
+# ── Paradigm ───────────────────────────────────────────────────────────────
+paradigm: subject_dependent   # subject_dependent | subject_independent
+
+# Subject-Dependent
+sd_train_sessions: [1, 2]
+sd_test_sessions:  [3]
+sd_cross_val:      false      # set true for 3-fold cross-session CV
+
+# Subject-Independent (LOSO)
+si_sessions: [1, 2, 3]
+si_euclidean_align: true      # Euclidean alignment per subject before training

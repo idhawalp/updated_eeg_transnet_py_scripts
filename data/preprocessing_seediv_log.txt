@@ -1,0 +1,249 @@
+(idp) C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\data>python preprocess_data_seediv.py
+=================================================================
+SEED-IV Preprocessing  (v2 — Overlapping Windows)
+  Fs           : 200 Hz
+  Window       : 800 samples  (4.0 s)
+  Stride       : 400 samples  (2.0 s)  → 50% overlap
+  Bandpass     : 1.0–75.0 Hz
+  Normalisation: per-channel z-score
+  Source       : C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\data\eeg_raw_data
+  Output       : C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv
+=================================================================
+
+── Session 1  (15 files) ──
+
+  Sub 01 | 1_20160518.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session1_label.npy  shape: (1687,)
+  Sub01  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 02 | 2_20150915.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session1_label.npy  shape: (1687,)
+  Sub02  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 03 | 3_20150919.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session1_label.npy  shape: (1687,)
+  Sub03  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 04 | 4_20151111.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session1_label.npy  shape: (1687,)
+  Sub04  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 05 | 5_20160406.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session1_label.npy  shape: (1687,)
+  Sub05  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 06 | 6_20150507.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session1_label.npy  shape: (1687,)
+  Sub06  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 07 | 7_20150715.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session1_label.npy  shape: (1687,)
+  Sub07  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 08 | 8_20151103.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session1_label.npy  shape: (1687,)
+  Sub08  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 09 | 9_20151028.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session1_label.npy  shape: (1687,)
+  Sub09  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 10 | 10_20151014.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session1_label.npy  shape: (1687,)
+  Sub10  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 11 | 11_20150916.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session1_label.npy  shape: (1687,)
+  Sub11  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 12 | 12_20150725.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session1_label.npy  shape: (1687,)
+  Sub12  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 13 | 13_20151115.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session1_label.npy  shape: (1687,)
+  Sub13  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 14 | 14_20151205.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session1_label.npy  shape: (1687,)
+  Sub14  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+  Sub 15 | 15_20150508.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session1_data.npy   shape: (1687, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session1_label.npy  shape: (1687,)
+  Sub15  Neutral:431(26%) | Sad:513(30%) | Fear:362(21%) | Happy:381(23%)
+
+── Session 2  (15 files) ──
+
+  Sub 01 | 1_20161125.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session2_label.npy  shape: (1653,)
+  Sub01  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 02 | 2_20150920.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session2_label.npy  shape: (1653,)
+  Sub02  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 03 | 3_20151018.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session2_label.npy  shape: (1653,)
+  Sub03  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 04 | 4_20151118.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session2_label.npy  shape: (1653,)
+  Sub04  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 05 | 5_20160413.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session2_label.npy  shape: (1653,)
+  Sub05  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 06 | 6_20150511.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session2_label.npy  shape: (1653,)
+  Sub06  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 07 | 7_20150717.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session2_label.npy  shape: (1653,)
+  Sub07  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 08 | 8_20151110.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session2_label.npy  shape: (1653,)
+  Sub08  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 09 | 9_20151119.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session2_label.npy  shape: (1653,)
+  Sub09  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 10 | 10_20151021.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session2_label.npy  shape: (1653,)
+  Sub10  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 11 | 11_20150921.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session2_label.npy  shape: (1653,)
+  Sub11  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 12 | 12_20150804.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session2_label.npy  shape: (1653,)
+  Sub12  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 13 | 13_20151125.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session2_label.npy  shape: (1653,)
+  Sub13  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 14 | 14_20151208.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session2_label.npy  shape: (1653,)
+  Sub14  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+  Sub 15 | 15_20150514.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session2_data.npy   shape: (1653, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session2_label.npy  shape: (1653,)
+  Sub15  Neutral:462(28%) | Sad:386(23%) | Fear:537(32%) | Happy:268(16%)
+
+── Session 3  (15 files) ──
+
+  Sub 01 | 1_20161126.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub1_session3_label.npy  shape: (1631,)
+  Sub01  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 02 | 2_20151012.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub2_session3_label.npy  shape: (1631,)
+  Sub02  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 03 | 3_20151101.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub3_session3_label.npy  shape: (1631,)
+  Sub03  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 04 | 4_20151123.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub4_session3_label.npy  shape: (1631,)
+  Sub04  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 05 | 5_20160420.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub5_session3_label.npy  shape: (1631,)
+  Sub05  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 06 | 6_20150512.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub6_session3_label.npy  shape: (1631,)
+  Sub06  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 07 | 7_20150721.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub7_session3_label.npy  shape: (1631,)
+  Sub07  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 08 | 8_20151117.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub8_session3_label.npy  shape: (1631,)
+  Sub08  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 09 | 9_20151209.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub9_session3_label.npy  shape: (1631,)
+  Sub09  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 10 | 10_20151023.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub10_session3_label.npy  shape: (1631,)
+  Sub10  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 11 | 11_20151011.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub11_session3_label.npy  shape: (1631,)
+  Sub11  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 12 | 12_20150807.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub12_session3_label.npy  shape: (1631,)
+  Sub12  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 13 | 13_20161130.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub13_session3_label.npy  shape: (1631,)
+  Sub13  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 14 | 14_20151215.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub14_session3_label.npy  shape: (1631,)
+  Sub14  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+  Sub 15 | 15_20150527.mat
+  data  → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session3_data.npy   shape: (1631, 62, 800)
+  label → C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\dataset\seediv\sub15_session3_label.npy  shape: (1631,)
+  Sub15  Neutral:454(28%) | Sad:453(28%) | Fear:322(20%) | Happy:402(25%)
+
+=================================================================
+Done.  Total windows: 74565
+Expected ~14 windows/trial  (vs 7 in v1 without overlap)
+=================================================================
+
+(idp) C:\Users\dpala_c8xsp2b\OneDrive\Desktop\Cloned Repos\update_EEG-TransNet\EEG-TransNet\data>
